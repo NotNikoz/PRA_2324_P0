@@ -1,6 +1,13 @@
 #include <iostream>
 #include "BrazoRobotico.h"
 
+BrazoRobotico::BrazoRobotico () {
+	x = 0.0;
+	y = 0.0;
+	z = 0.0;
+	estaSujetando = false;
+};
+
 BrazoRobotico::BrazoRobotico (double x, double y, double z,bool Sujetando) : x{x} , y{y} ,z{z} {
 	estaSujetando = Sujetando;
 };
